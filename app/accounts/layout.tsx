@@ -7,7 +7,7 @@ export const metadata = {
     "Cloned copy - Web application that contains leetcode problems and video solutions",
 };
 
-export default function RootLayout({
+export default function AccountsLayout({
   children,
 }: {
   children: React.ReactNode;
