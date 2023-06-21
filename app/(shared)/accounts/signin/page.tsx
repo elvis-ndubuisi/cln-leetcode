@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Input from "@/components/client/Input";
+import SocialAuths from "@/components/server/SocialAuths";
 
 export default function AuthSignIn() {
   return (
@@ -34,34 +35,9 @@ export default function AuthSignIn() {
           <small className="text-[0.8rem] text-gray-400">
             or you can sign in with
           </small>
-          <section className="flex items-center justify-center gap-4">
-            <a href="">google</a>
-            <a href="">google</a>
-            <a href="">google</a>
-          </section>
+          <SocialAuths />
         </section>
       </section>
-      {/* <section className="drop-shadow-sm bg-white px-6 py-8 w-screen max-w-xs"> */}
-      {/* <Image
-            src="/assets/leetcode-logo.svg"
-            alt="cloned leetcode alt brand"
-            height={90}
-            width={90}
-            priority
-            className="mb-4"
-          /> */}
-
-      {/* <form className="flex flex-col gap-6">
-            <Input name="name" placeholder="placeholder" />
-            <input type="button" value="login" />
-          </form>
-
-          <section className="flex items-center justify-center gap-4">
-            <a href="">google</a>
-            <a href="">google</a>
-            <a href="">google</a>
-          </section> */}
-      {/* </section> */}
     </section>
   );
 }

@@ -4,13 +4,15 @@ import Link from "next/link";
 import Footer from "@/components/server/Footer";
 import HomeBg from "@/components/server/HomeBg";
 import DevIcon from "@/components/server/DevIcon";
+import HomeSectionBg from "@/components/server/HomeSectionBg";
+import { FaGraduationCap } from "react-icons/fa";
 
 export default function Home() {
   return (
     <>
       <section className="relative h-[760px] z-0 text-white select-none">
         <HomeBg />
-        <header className="wrapper flex items-center justify-between pt-5">
+        <header className="px-2 wrapper flex items-center justify-between pt-5">
           <Image
             src="/assets/logo-full.png"
             alt="cln-leetcode brand"
@@ -21,7 +23,7 @@ export default function Home() {
             <Link href="accounts/signin">Sign In</Link>
           </nav>
         </header>
-        <section className="wrapper min-h-[400px] flex items-center justify-between">
+        <section className="px-2 wrapper min-h-[400px] flex items-center justify-between">
           <div className="flex-1"></div>
           <section className="flex-1 text-center p-2">
             <h1 className="font-bold text-3xl mb-2">A New Way To Learn</h1>
@@ -38,8 +40,9 @@ export default function Home() {
           </section>
         </section>
       </section>
-      <section className="wrapper relative -top-20 flex items-center justify-between gap-4">
-        <section className="flex-1 text-right flex flex-col items-end gap-6">
+
+      <section className="px-2 wrapper relative -top-20 flex items-center justify-between gap-4 flex-wrap">
+        <section className="flex-1 text-right flex flex-col items-end gap-6 min-w-[300px]">
           <div className="flex justify-end items-center">
             <h2 className="font-semibold text-2xl text-teal-500">
               Start Exploring
@@ -78,7 +81,7 @@ export default function Home() {
           </p>
           <Link href="#">View Questions</Link>
         </section>
-        <div className="bg-red-500 w-full max-w-[2px]"></div>
+        <div className="bg-white w-full max-w-[2px]"></div>
         <section className="w-full max-w-xl p-3">
           <div className="flex items-center">
             <DevIcon xCss="-m-1 z-[2]" />
@@ -98,7 +101,9 @@ export default function Home() {
       </section>
 
       <section className="wrapper grid place-items-center">
-        <DevIcon />
+        <DevIcon xCss="from-blue-500 to-blue-200 text-blue-400">
+          <FaGraduationCap size={33} />
+        </DevIcon>
         <h3 className="font-semibold text-xl text-blue-400 mb-6">Developer</h3>
         <p className="leading-7 text-gray-400 max-w-2xl text-center">
           We now support 14 popular coding languages. At our core, LeetCode is
@@ -108,8 +113,8 @@ export default function Home() {
       </section>
 
       <section className="wrapper grid place-items-center">
-        <DevIcon />
-        <h3 className="font-semibold text-xl text-blue-400 mb-6">
+        <DevIcon xCss="from-red-700 to-red-400" />
+        <h3 className="font-semibold text-xl text-red-700 mb-6">
           Cloned with `thinking....`
         </h3>
         <p className="leading-7 text-gray-400 max-w-2xl text-center">
@@ -125,6 +130,7 @@ export default function Home() {
         </p>
       </section>
       <Footer />
+      <HomeSectionBg />
     </>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import ResumeButton from "./ResumeButton";
 
-const AuthHeader: React.FC = () => {
+const SharedHeader: React.FC = () => {
   return (
     <header className="bg-white">
       <nav className="max-w-screen-xl mx-auto px-2 flex items-center justify-between h-11">
@@ -26,4 +26,4 @@ const AuthHeader: React.FC = () => {
     </header>
   );
 };
-export default AuthHeader;
+export default SharedHeader;

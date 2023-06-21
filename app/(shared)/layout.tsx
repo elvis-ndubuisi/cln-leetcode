@@ -1,4 +1,4 @@
-import AuthHeader from "@/components/server/AuthHeader";
+import SharedHeader from "@/components/server/SharedHeader";
 import Footer from "@/components/server/Footer";
 
 export const metadata = {
@@ -13,12 +13,10 @@ export default function AccountsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-gray-100 h-screen flex flex-col gap-4 relative">
-        <AuthHeader />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <main className="bg-gray-100 h-screen flex flex-col gap-4 relative">
+      <SharedHeader />
+      {children}
+      <Footer />
+    </main>
   );
 }
