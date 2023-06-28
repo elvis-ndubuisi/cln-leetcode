@@ -13,7 +13,7 @@ export default function AccountsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="bg-gray-100 h-screen flex flex-col gap-4 relative">
+    <main className="bg-gray-100 min-h-screen flex flex-col">
       <SharedHeader />
       {children}
       <Footer />

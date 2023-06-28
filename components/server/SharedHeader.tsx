@@ -5,7 +5,7 @@ import ResumeButton from "./ResumeButton";
 
 const SharedHeader: React.FC = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-white border-b border-gray-200">
       <nav className="max-w-screen-xl mx-auto px-2 flex items-center justify-between h-11">
         <div className="flex items-center justify-start gap-5 text-[0.8rem] text-gray-600">
           <Link href="/">
